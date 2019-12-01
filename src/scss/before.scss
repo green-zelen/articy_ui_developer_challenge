@@ -1,0 +1,103 @@
+@import 'variables.scss';
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    padding: 0 1em;
+}
+
+.pentagon {
+    position: relative;
+    box-sizing: content-box;
+    border-style: solid;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-style: solid;
+    }
+
+    &.pentagon-top {
+        width: 18.8px;
+        border-width: 17.88px 5.81px 0;
+        left: 41px;
+        top: 41px;
+
+        &::before {
+            top: -29px;
+            left: -6px;
+            border-width: 0 15.21px 11.05px;
+        }
+    }
+
+    &.pentagon-middle {
+        width: 37.6px;
+        border-width: 35.76px 11.62px 0;
+        left: 48px;
+        top: 48px;
+
+        &::before {
+            top: -58px;
+            left: -12px;
+            border-width: 0 30.42px 22.21px;
+        }
+    }
+
+    &.pentagon-bottom {
+        width: 75.2px;
+        border-width: 71.52px 23.24px 0;
+        left: 58px;
+        top: 58px;
+
+        &::before {
+            top: -116px;
+            left: -24px;
+            border-width: 0 60.84px 44.42px;
+        }
+    }
+
+}
+
+.dark-theme {
+    background-color: $dark-background;
+
+    .drop-shadow {
+        filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.27)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.19));
+    }
+
+    .pentagon {
+        border-color: $dark-color transparent;
+
+        &::before {
+            border-color: transparent transparent $dark-color;
+        }
+    }
+
+    a {
+        color: $dark-color;
+    }
+}
+
+.light-theme {
+    background-color: $light-background;
+
+    .drop-shadow {
+        filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14));
+    }
+
+    .pentagon {
+        border-color: $light-color transparent;
+
+        &::before {
+            border-color: transparent transparent $light-color;
+        }
+    }
+
+    a {
+        color: $light-color;
+    }
+}
