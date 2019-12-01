@@ -1,8 +1,8 @@
 {
-  "name": "articy_ui_developer_challange",
+  "name": "articy_ui_developer_challenge",
   "version": "1.0.0",
-  "main": "index.html",
-  "repository": "git@github.com:green-zelen/articy_ui_developer_challange.git",
+  "main": "clip-path.html",
+  "repository": "git@github.com:green-zelen/articy_ui_developer_challenge.git",
   "author": "Maria Perlovskaya <marigreenzelen@gmail.com>",
   "license": "MIT",
   "dependencies": {
