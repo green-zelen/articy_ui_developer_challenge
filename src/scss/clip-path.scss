@@ -1,10 +1,18 @@
 @import 'variables.scss';
 
+body {
+    font-family: sans-serif;
+}
+
+a {
+    padding: 0 1em;
+}
+
 .pentagon {
     position: absolute;
     float: left;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    
+
     &.pentagon-top {
         width: 30.43px;
         height: 28.94px;
@@ -37,6 +45,10 @@
     .pentagon {
         background-color: $dark-color;
     }
+
+    a {
+        color: $dark-color;
+    }
 }
 
 .light-theme {
@@ -48,5 +60,9 @@
 
     .pentagon {
         background-color: $light-color;
+    }
+
+    a {
+        color: $light-color;
     }
 }
