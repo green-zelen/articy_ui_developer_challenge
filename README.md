@@ -23,7 +23,7 @@ Install dependencies: `$ make install`
 
 `$ make build` – lint styles according the [stylelint-config-recommended-scss](https://github.com/kristerkari/stylelint-config-recommended-scss), clean dist folder and build production-ready asserts
 
-## Summery`
+## Summery
 
 For this challenge, I got a few solutions. The first one is [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) – property for creating a clipping region of elements. 
 
