@@ -22,41 +22,41 @@ a {
     }
 
     &.pentagon-top {
-        width: 18.8px;
-        border-width: 17.88px 5.81px 0;
+        width: $pentagram-side;
+        border-width: $trapeze_height $pentagram_offset 0;
         left: 41px;
         top: 41px;
 
         &::before {
             top: -29px;
             left: -6px;
-            border-width: 0 15.21px 11.05px;
+            border-width: 0 $triangle_half_width $triangle_height;
         }
     }
 
     &.pentagon-middle {
-        width: 37.6px;
-        border-width: 35.76px 11.62px 0;
+        width: calc(#{$pentagram_side} * 2);
+        border-width: calc(#{$trapeze_height} * 2) calc(#{$pentagram_offset} * 2) 0;
         left: 48px;
         top: 48px;
 
         &::before {
             top: -58px;
             left: -12px;
-            border-width: 0 30.42px 22.21px;
+            border-width: 0 calc(#{$triangle_half_width} * 2) calc(#{$triangle_height} * 2);
         }
     }
 
     &.pentagon-bottom {
-        width: 75.2px;
-        border-width: 71.52px 23.24px 0;
+        width: calc(#{$pentagram_side} * 4);
+        border-width: calc(#{$trapeze_height} * 4) calc(#{$pentagram_offset} * 4) 0;
         left: 58px;
         top: 58px;
 
         &::before {
-            top: -116px;
-            left: -24px;
-            border-width: 0 60.84px 44.42px;
+            top: -115px;
+            left: -23px;
+            border-width: 0 calc(#{$triangle_half_width} * 4) calc(#{$triangle_height} * 4);
         }
     }
 
