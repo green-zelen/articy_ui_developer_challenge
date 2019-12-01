@@ -4,10 +4,10 @@ install:
 	yarn install
 
 start:
-	parcel src/index.html
+	parcel src/clip-path.html
 
 build: lint
-	parcel build src/index.html
+	parcel build src/clip-path.html
 
 lint:
-	./node_modules/.bin/stylelint src/css/*
+	./node_modules/.bin/stylelint src/scss/*

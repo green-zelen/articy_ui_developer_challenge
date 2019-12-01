@@ -1,0 +1,52 @@
+@import 'variables.scss';
+
+.pentagon {
+    position: absolute;
+    float: left;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    
+    &.pentagon-top {
+        width: 30.43px;
+        height: 28.94px;
+        left: 41.78px;
+        top: 30px;
+    }
+
+    &.pentagon-middle {
+        width: 60.87px;
+        height: 57.89px;
+        left: 48.57px;
+        top: 44px;
+    }
+
+    &.pentagon-bottom {
+        width: 121.74px;
+        height: 115.78px;
+        left: 58.13px;
+        top: 67px;
+    }
+}
+
+.dark-theme {
+    background-color: $dark-background;
+
+    .drop-shadow {
+        filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.27)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.19));
+    }
+
+    .pentagon {
+        background-color: $dark-color;
+    }
+}
+
+.light-theme {
+    background-color: $light-background;
+
+    .drop-shadow {
+        filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14));
+    }
+
+    .pentagon {
+        background-color: $light-color;
+    }
+}
