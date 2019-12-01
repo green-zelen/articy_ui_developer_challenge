@@ -1,17 +1,34 @@
-# articy_ui_developer_challange
+# articy_ui_developer_challenge
 
 Ui Developer Challenge fo Articy
 
-# Install
+## Requirements
 
-install parceljs globally
-`yarn global add parcel-bundler`
+* nodejs
+* yarn 
+* parceljs
+* scss
 
-# How to build
+## Install
 
-`make build` – run linters and build the project into the dist directory
+You should have [parceljs](https://parceljs.org/) in your PATH or install it if you haven't:
 
-# How to start
+`$ yarn global add parcel-bundler`
 
-`make start`
+Install dependencies: `$ make install`
 
+## Usage
+
+`$ make start` – build dev version and run local web-server
+
+`$ make build` – lint styles according the [stylelint-config-recommended-scss](https://github.com/kristerkari/stylelint-config-recommended-scss), clean dist folder and build production-ready asserts
+
+## Challenge
+
+todo: add description
+
+After `make start` both solutions will be available at:
+
+`clip-path` - [http://localhost:1234/clip-path.html](http://localhost:1234/clip-path.html)
+
+`::before` – [http://localhost:1234/before.html](http://localhost:1234/before.html)
